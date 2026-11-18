@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up and Log In | LearnLoop Academy</title>
+<meta name="description" content="Demo sign up and log in for LearnLoop Academy. Any details are accepted and nothing real is stored.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="auth">
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="LearnLoop Academy home">
+      <img src="img/logo-mark.png" alt="LearnLoop Academy logo" width="44" height="40">
+      <span class="brand-text">Learn<span class="brand-loop">Loop</span> <span class="brand-academy">ACADEMY</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span> Menu
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="paths.html">Learning Paths</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="auth.html?mode=login">Log In</a>
+      <a class="btn btn-mint" href="auth.html?mode=signup">Get Started</a>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="section">
+  <div class="wrap narrow">
+    <div class="auth-card">
+      <div class="auth-tabs" role="tablist" aria-label="Sign up or log in">
+        <button class="auth-tab" id="tab-signup" type="button" role="tab">Sign Up</button>
+        <button class="auth-tab" id="tab-login" type="button" role="tab">Log In</button>
+      </div>
+      <p class="demo-note">Demo only. Any details are accepted, and nothing real is stored or sent anywhere.</p>
+      <p class="auth-course-note" id="auth-course-note" hidden></p>
+      <form id="signup-form" novalidate>
+        <h1>Create your account</h1>
+        <label for="su-name">Full name</label>
+        <input type="text" id="su-name" name="name" autocomplete="name" required>
+        <label for="su-email">Email address</label>
+        <input type="email" id="su-email" name="email" autocomplete="email" required>
+        <label for="su-password">Password</label>
+        <input type="password" id="su-password" name="password" autocomplete="new-password" required>
+        <p class="form-error" id="signup-error" role="alert" hidden></p>
+        <button class="btn btn-mint btn-block" type="submit">Sign up and continue</button>
+      </form>
+      <form id="login-form" novalidate hidden>
+        <h1>Welcome back</h1>
+        <label for="li-email">Email address</label>
+        <input type="email" id="li-email" name="email" autocomplete="email" required>
+        <label for="li-password">Password</label>
+        <input type="password" id="li-password" name="password" autocomplete="current-password" required>
+        <p class="form-error" id="login-error" role="alert" hidden></p>
+        <button class="btn btn-mint btn-block" type="submit">Log in and continue</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<section class="lead-band" aria-label="About this demo website">
+  <div class="wrap lead-band-in">
+    <p class="lead-band-text">This demo website was designed and built by Interlinkz. Like the look of it?</p>
+    <div class="lead-band-actions">
+      <a class="btn btn-mint" href="https://interlinkz.com/contact">Want a website like this? Talk to Interlinkz</a>
+      <a class="lead-contact-link" href="https://interlinkz.com/contact">Contact Interlinkz</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="index.html">
+        <img src="img/logo-mark.png" alt="LearnLoop Academy logo" width="44" height="40">
+        <span class="brand-text">Learn<span class="brand-loop">Loop</span> <span class="brand-academy">ACADEMY</span></span>
+      </a>
+      <p>Short, practical online courses in business, tech, design and languages. Learn a skill, use it this week.</p>
+    </div>
+    <nav class="footer-col" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="courses.html">Course Catalogue</a>
+      <a href="paths.html">Learning Paths</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="instructor.html">Become an Instructor</a>
+      <a href="dashboard.html">Student Dashboard</a>
+    </nav>
+    <nav class="footer-col" aria-label="Academy">
+      <h3>Academy</h3>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="auth.html?mode=signup">Sign Up</a>
+      <a href="auth.html?mode=login">Log In</a>
+    </nav>
+    <div class="footer-col">
+      <h3>Support</h3>
+      <p>Email: <a href="mailto:hello@learnloop.example.com">hello@learnloop.example.com</a></p>
+      <p>Phone: 0300 0000000</p>
+      <p>Support hours: Monday to Friday, 9 am to 6 pm</p>
+      <p>Online only, no public office.</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p class="footer-credit">Built by <a href="https://interlinkz.com">Interlinkz</a></p>
+    <p class="footer-demo">This is a demo portfolio website. Course details, prices and contact details are sample content for design display only.</p>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

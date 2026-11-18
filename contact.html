@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | LearnLoop Academy</title>
+<meta name="description" content="Contact LearnLoop Academy by email, phone or message form. Support hours Monday to Friday, 9 am to 6 pm.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="LearnLoop Academy home">
+      <img src="img/logo-mark.png" alt="LearnLoop Academy logo" width="44" height="40">
+      <span class="brand-text">Learn<span class="brand-loop">Loop</span> <span class="brand-academy">ACADEMY</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span> Menu
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="paths.html">Learning Paths</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="auth.html?mode=login">Log In</a>
+      <a class="btn btn-mint" href="auth.html?mode=signup">Get Started</a>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>Contact us</h1>
+    <p>Questions about a course, a path or group enrolment? Send us a message.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap about-layout">
+    <div class="about-main">
+      <h2>Academy details</h2>
+      <div class="contact-block">
+        <p><strong>LearnLoop Academy</strong></p>
+        <p>Email: <a href="mailto:hello@learnloop.example.com">hello@learnloop.example.com</a></p>
+        <p>Phone: 0300 0000000</p>
+        <p>Support hours: Monday to Friday, 9 am to 6 pm</p>
+        <p>Online only, no public office.</p>
+      </div>
+      <h2>Groups and schools</h2>
+      <p>We offer group enrolment for small teams and classes. Write to us through this form and we will set up a group plan.</p>
+    </div>
+    <div class="form-card">
+      <h2>Send a message</h2>
+      <form id="contact-form" novalidate>
+        <label for="ct-name">Your name</label>
+        <input type="text" id="ct-name" name="name" required>
+        <label for="ct-email">Email address</label>
+        <input type="email" id="ct-email" name="email" required>
+        <label for="ct-topic">Topic</label>
+        <select id="ct-topic" name="topic" required>
+          <option value="">Choose a topic</option>
+          <option>Course question</option>
+          <option>Learning paths</option>
+          <option>Group enrolment</option>
+          <option>Refunds</option>
+          <option>Something else</option>
+        </select>
+        <label for="ct-msg">Message</label>
+        <textarea id="ct-msg" name="message" rows="5" required></textarea>
+        <p class="form-error" id="contact-error" role="alert" hidden></p>
+        <p class="form-success" id="contact-success" role="status" hidden>Thank you. Your message has been sent (demo). We reply within 1 working day.</p>
+        <button class="btn btn-mint btn-block" type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<section class="lead-band" aria-label="About this demo website">
+  <div class="wrap lead-band-in">
+    <p class="lead-band-text">This demo website was designed and built by Interlinkz. Like the look of it?</p>
+    <div class="lead-band-actions">
+      <a class="btn btn-mint" href="https://interlinkz.com/contact">Want a website like this? Talk to Interlinkz</a>
+      <a class="lead-contact-link" href="https://interlinkz.com/contact">Contact Interlinkz</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="index.html">
+        <img src="img/logo-mark.png" alt="LearnLoop Academy logo" width="44" height="40">
+        <span class="brand-text">Learn<span class="brand-loop">Loop</span> <span class="brand-academy">ACADEMY</span></span>
+      </a>
+      <p>Short, practical online courses in business, tech, design and languages. Learn a skill, use it this week.</p>
+    </div>
+    <nav class="footer-col" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="courses.html">Course Catalogue</a>
+      <a href="paths.html">Learning Paths</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="instructor.html">Become an Instructor</a>
+      <a href="dashboard.html">Student Dashboard</a>
+    </nav>
+    <nav class="footer-col" aria-label="Academy">
+      <h3>Academy</h3>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="auth.html?mode=signup">Sign Up</a>
+      <a href="auth.html?mode=login">Log In</a>
+    </nav>
+    <div class="footer-col">
+      <h3>Support</h3>
+      <p>Email: <a href="mailto:hello@learnloop.example.com">hello@learnloop.example.com</a></p>
+      <p>Phone: 0300 0000000</p>
+      <p>Support hours: Monday to Friday, 9 am to 6 pm</p>
+      <p>Online only, no public office.</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p class="footer-credit">Built by <a href="https://interlinkz.com">Interlinkz</a></p>
+    <p class="footer-demo">This is a demo portfolio website. Course details, prices and contact details are sample content for design display only.</p>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
